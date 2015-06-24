@@ -357,10 +357,10 @@ jsbin.settings.includejs = jsbin.settings.includejs === undefined ? true : jsbin
 
 // ignore for embed as there might be a lot of embeds on the page
 if (!jsbin.embed && store.sessionStorage.getItem('runnerPending')) {
-  $document.trigger('tip', {
-    content: 'It looks like your last session may have crashed, so I\'ve disabled "Auto-run JS" for you',
-    type: 'error'
-  });
+  // $document.trigger('tip', {
+  //   content: 'It looks like your last session may have crashed, so I\'ve disabled "Auto-run JS" for you',
+  //   type: 'error'
+  // });
   jsbin.settings.includejs = false;
 }
 

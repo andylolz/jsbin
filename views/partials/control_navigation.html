@@ -9,7 +9,7 @@
         </span>
       {{else}}
         <div class="menu">
-          <a href="{{root}}{{code_id_path}}/edit#file" target="_blank" class="brand button button-dropdown group button-dropdown-arrow"><img src="{{static}}/images/favicon.svg"> File</a>
+          <a href="{{root}}{{code_id_path}}/edit#file" target="_blank" class="brand button button-dropdown group button-dropdown-arrow"><img src="http://projects.codeclub.org.uk/img/ccuk_favicon.ico" width="16px"> File</a>
           <div class="dropdown" id="file">
             <div class="dropdownmenu">
               <a id="createnew" data-desc="Create a brand new bin" class="button group" title="Create fresh bin" href="{{root}}" data-label="new">New</a>
@@ -33,7 +33,7 @@
               <hr data-desc="">
               <a id="addmeta" data-desc="Insert a description shown in My Bins" title="Add meta data to bin" class="button group" href="#add-description">Add description</a>
               <a title="Save snapshot" data-desc="Save current work, and begin new revision on next change" data-shortcut="ctrl+s" class="button save group" data-label="save" href="{{root}}/save">Save snapshot</a>
-              <a data-desc="Copy and create a new bin start at revision #1" id="clone" title="Create a new copy" class="button clone group" data-label="clone" href="{{root}}/clone">Clone</a>
+              <a data-desc="Copy and create a new bin start at revision #1" id="clone" title="Create a new copy" class="button clone group" data-label="clone" href="{{root}}/clone">Remix</a>
               <hr data-desc="">
               {{#feature request "upgrade"}}
                 {{#feature request "vanity"}}
@@ -48,11 +48,13 @@
               <a hidden data-desc="How to embed a bin" target="_blank" title="How to embed a bin" data-label="how-to-embed" class="button group" href="http://jsbin.com/help/how-can-i-embed-jsbin">How to embed</a>
             </div>
           </div>
-        </div><div class="menu">
+        </div>
+<!--         <div class="menu">
           <span class="button group">Add library
           <select id="library"></select>
           </span>
-        </div><div id="sharemenu" class="menu {{#unless code_id}}hidden{{/unless}}">
+        </div> -->
+        <div id="sharemenu" class="menu {{#unless code_id}}hidden{{/unless}}">
           <a href="#share"  class="button button-dropdown group">Share</a>
           <div class="dropdown{{#feature request "revisionless"}} share-split{{/feature}}" id="share">
             <div class="dropdowncontent">

@@ -315,7 +315,7 @@ if (!jsbin.saveDisabled) {
 
           $document.trigger('tip', {
             type: 'notification',
-            content: 'You\'re currently viewing someone else\'s live stream, but you can <strong><a class="clone" href="' + jsbin.root + '/clone">clone your own copy</a></strong> (' + cmd + plus + shift + plus + 'S) at any time to save your edits'
+            content: 'You\'re currently viewing someone else\'s bin, but you can <strong><a class="clone" href="' + jsbin.root + '/clone">remix it</a></strong> (' + cmd + plus + shift + plus + 'S) to save your changes'
           });
         }
       });
